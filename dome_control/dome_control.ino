@@ -232,7 +232,7 @@ void loop() {
 // Function to send SOS message
 void sendSOSMessage() {
   Serial.println("Sending SOS SMS...");
-  gsmSerial.println("AT+CMGS=\"+916304764066\""); // Replace with your phone number
+  gsmSerial.println("AT+CMGS=\"+91**********\""); // Replace with your phone number
   delay(1000);
   gsmSerial.print("Fire Alert! Immediate action required.Location:Market yard ,latitude and longitude:16.2864° N, 80.4107° E");
   gsmSerial.write(26); // Ctrl+Z to send the SMS
