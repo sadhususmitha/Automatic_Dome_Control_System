@@ -4,8 +4,8 @@ import time
 import serial
 s=serial.Serial("COM5",115200)
 def get_weather(canvas):
-    api='4e057c214212955c86502364bb3fe6eb'
-    base_url='https://api.openweathermap.org/data/2.5'#base url for making api requests
+    api='your api key'
+    base_url=''#base url for making api requests
     city=textfield.get()
     url=f"{base_url}/weather?q={city}&appid={api}&units=metric" # construct the api  request url
     response=requests.get(url) # send the get request to api
